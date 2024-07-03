@@ -1,0 +1,17 @@
+# SQL Injection Prevention Demo
+
+## Setup Instructions
+
+1. Install MySQL and set up the database:
+   ```sh
+   mysql -u root -p < secure/setup.sql
+
+
+2. pip install -r secure/requirements.txt
+
+3. cd secure
+python app.py
+
+
+Explanation
+The application is designed to prevent SQL injection by using parameterized queries. User inputs are safely passed as parameters to the SQL query, ensuring that they are treated as data rather than executable code. This approach prevents malicious inputs from altering the intended SQL command.
