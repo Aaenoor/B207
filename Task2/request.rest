@@ -1,0 +1,42 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODYwODMyMzBjMTI3OWYxMWY3MWE0MCIsIm5hbWUiOiJmaW5hbG1lbnRlIiwicm9sZXMiOlsiYWRtaW4iXSwiaWF0IjoxNzIwMDU5OTgxLCJleHAiOjE3MjI2NTE5ODF9.gGqcnTBX0ri0EFXWniObfibADYpzZWTZ7ARz_nk4FZo
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmluYWx1c2VyIiwiaWF0IjoxNzE5OTYxODEzfQ.r50jpTuAhjRMaum0nHA2jV3l_ZS019QmUzxPckoFvjg"
+}
+
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "finalmen",
+    "password": "done",
+    "role": "user"
+}
+
+###
+
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "name":"finalmen",
+    "password": "done"
+}
+
+###
+
+GET http://localhost:3000/user/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODYwYmU0N2RjNTA5Yjc5M2FiOGZjZCIsIm5hbWUiOiJmaW5hbG1lbiIsInJvbGVzIjpbInVzZXIiXSwiaWF0IjoxNzIwMDYwOTA0LCJleHAiOjE3MjI2NTI5MDR9.vPKaRIzfIQclKwVZ9qpVT1nhLxuoupvFqs7TO_S2YM8
+ 
+
+###
+
+GET http://localhost:3000/admin/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODYwODMyMzBjMTI3OWYxMWY3MWE0MCIsIm5hbWUiOiJmaW5hbG1lbnRlIiwicm9sZXMiOlsiYWRtaW4iXSwiaWF0IjoxNzIwMDU5OTgxLCJleHAiOjE3MjI2NTE5ODF9.gGqcnTBX0ri0EFXWniObfibADYpzZWTZ7ARz_nk4FZo
