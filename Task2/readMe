@@ -1,0 +1,30 @@
+# JWT authentication framework
+
+## Setup Instructions
+
+1. Clone the repository and change direction:
+   ```sh
+   git clone https://github.com/Aaenoor/B207
+   cd Task2
+
+2. Install dependecies
+
+   ```sh
+   npm install
+
+3. start servers
+
+```sh
+npm run-scirpt devStart
+npm run-script devAuth
+
+```
+
+### Explanation:
+
+This project implements a JSON web token based authentication framework using Node.JS, and MongoDB
+
+
+
+
+
